@@ -1,0 +1,34 @@
+# Variáveis de ambiente (NUNCA commitar)
+.env
+
+# Saídas geradas
+output/
+logs/*.log
+
+# Ambiente virtual
+.venv/
+venv/
+env/
+
+# Cache Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+
+# Arquivos de estado da pipeline
+historias_recentes.json
+
+# Modelos do Whisper (baixados em runtime)
+models/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
