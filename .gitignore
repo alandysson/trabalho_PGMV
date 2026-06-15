@@ -1,9 +1,24 @@
 # Variáveis de ambiente (NUNCA commitar)
 .env
+.env.local
 
-# Saídas geradas
+# Banco SQLite + WAL/SHM
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+
+# Storage de arquivos gerados pelo backend
+storage/
+
+# Saídas do pipeline legado
 output/
-logs/*.log
+
+# Logs
+logs/
+*.log
 
 # Ambiente virtual
 .venv/
@@ -18,7 +33,7 @@ __pycache__/
 .Python
 *.egg-info/
 
-# Arquivos de estado da pipeline
+# Arquivos de estado da pipeline legada
 historias_recentes.json
 
 # Modelos do Whisper (baixados em runtime)

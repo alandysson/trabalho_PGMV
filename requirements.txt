@@ -1,7 +1,27 @@
+# =========================================================================
+# Backend FastAPI
+# =========================================================================
+fastapi>=0.110.0
+uvicorn[standard]>=0.27.0
+pydantic>=2.6.0
+pydantic-settings>=2.2.0
+sqlmodel>=0.0.16
+python-dotenv>=1.0.0
+# Backport pra resolver `X | None` em runtime no Pydantic (só necessário em <3.10)
+eval_type_backport>=0.2.0; python_version < "3.10"
+
+# Auth (feature `auth`)
+python-jose[cryptography]>=3.3.0
+bcrypt>=4.0.0
+email-validator>=2.1.0
+slowapi>=0.1.9
+
+# Temas — sugeridor dinâmico via Claude
 anthropic>=0.40.0
+
+# Pipeline (feature `pipeline` / `videos`) — adapters reusam legacy/
 edge-tts>=6.1.0
 faster-whisper>=1.0.0
-requests>=2.31.0
-python-dotenv>=1.0.0
 mutagen>=1.47.0
 Pillow>=10.0.0
+requests>=2.31.0
